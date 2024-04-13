@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+    <title>ПОДОЗРИТЕЛЬНЫЙ САЙТ</title>
+    <link rel="shortcut icon" href="../images/icon32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./content.css">
+</head>
+
+<body>
+    <script src="../background/ssim.web.js"></script>
+    <banner>
+        <header>
+            <img src="../images/iconlong.png" alt="Ловля запрещена" height="60" width="230">
+        </header>
+        <attention>
+            ВНИМАНИЕ! САЙТ В ЧЕРНОМ СПИСКЕ!
+        </attention>
+        <info>
+            <tabs>
+                <div id="wrong" class="tabexplane">
+                    <img id="wrong-img" class="tabimg" src="">
+                    <div class="taburl wrong-domain"></div>
+                </div>
+            </tabs>
+        </info>
+        <div id="alert">
+            <div style="display:block">
+                <p>
+                    Этот сайт находится в черном списке, потому что ранее был отмечен, как опасный!
+                </p>
+                <p>
+                    Возможно, сайт мошеннический.
+                </p>
+            </div>
+        </div>
+        <footer>
+            <button id="leave" onclick="leave">Отказаться от перехода</button>
+            <button id="stay" onclick="stay">Удалить из черного списка и перейти на страницу</button>
+        </footer>
+    </banner>
+    <script src="./content.js"></script>
+</body>
+
+</html>

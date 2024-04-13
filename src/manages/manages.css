@@ -1,0 +1,31 @@
+body {
+    background-color: #8accff;
+    color: black;
+    margin: 0px;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+header {
+    background: linear-gradient(#52b2fb, #8accff);
+    /*border-bottom: 2px solid #444444;*/
+    padding: 10px;
+}
+
+#content {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+table {
+    border: none;
+}
+
+tr+.close {
+    visibility: hidden;
+}
+
+tr:hover+.close {
+    visibility: visible;
+}
